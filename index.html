@@ -1,99 +1,310 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/main.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="icon" href="/img/cup.png" type="image/x-icon" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/main.css" />
     <title>KYE</title>
-</head>
-<body>
+
+    <!-- Smooth Scroll CSS -->
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+    </style>
+  </head>
+  <body>
     <!-- Nab Bar -->
     <nav class="relative container mx-auto p-6">
-       <!-- Flex container  -->
-       <div class="flex items-center justify-between">
-      <!-- logo -->
-      <div class="pt-2"> 
-        <img src="img/logo.png" alt="" class="h-8">          
-      </div>
-      <!-- Menu Items -->
-      <div class="hidden md:flex space-x-6 font-poppins text-xl">
-        <a href="#" class="hover:text-amber-900">Menu</a>
-        <a href="#" class="hover:text-amber-900">Rewards</a>
-        <a href="#" class="hover:text-amber-900">Gift Cards</a>
-        <a href="#" class="hover:text-amber-900">Find a Shop</a>
-      </div>
-      <!-- button -->
-      <a href="#"
-      class="hidden md:block p-3 px-6 pt-2 text-white bg-red-600 rounded-full baseline font-poppins hover:bg-brightRedLight">
-      Join Now</a>
+      <!-- Flex container  -->
+      <div class="flex items-center justify-between">
+        <!-- logo -->
+        <div class="pt-2">
+          <img src="img/logo.png" alt="" class="h-8" />
+        </div>
+        <!-- Menu Items -->
+        <div class="hidden md:flex space-x-6 font-poppins text-xl">
+          <a href="#menu" class="hover:text-amber-900">Menu</a>
+          <a href="#rewards" class="hover:text-amber-900">Rewards</a>
+          <!-- Link updated -->
+          <a href="#giftcard" class="hover:text-amber-900">Gift Cards</a>
+          <a href="#" class="hover:text-amber-900">Find a Shop</a>
+        </div>
+        <!-- button -->
+        <a
+          href="#"
+          class="hidden md:block p-3 px-6 pt-2 text-white bg-red-600 rounded-full baseline font-poppins hover:bg-brightRedLight"
+        >
+          Join Now</a
+        >
       </div>
     </nav>
+
     <!-- hero section -->
     <section class="hero">
-    <div class="container flex flex-col-reverse items-center px-6 mx-auto mt-10 space-y-0 md:space-y-0 md:flex-row">
-      <div class="flex flex-col mb-32 space-y-12 md:w-1/2">
-        <h1 class="max-w-md font-poppins text-4xl text-center md:text-5xl md:text-left"> 
-          Bring everyone together for a cup of coffee
-        </h1>
-        <p class="max-w-sm text-center text-amber-900 font-mono text-2xl">     
-    Coffee. Drinks. 
-    Cocktails. Snacks.
-    Good Eats. Great People.
-    Cozy place.|</p>
-        <div class="flex justify-center md:justify-start">
-          <a href="#"
-          class=" p-3 px-6 pt-2 text-white bg-red-600 rounded-full baseline font-poppins hover:bg-brightRedLight">
-          Sign In</a>
-        </div> 
-      </div>  
-    <!-- image -->
-    <div class="md:w-1/2 ">
-     <img src="img/coffee.png">
-    </div>
-    <!-- <div class="md:w-1/2 relative">
-      <img src="img/img3.png" class="absolute -top-72 left-0 z-10 ">
-      <img src="img/coffee.png" class="absolute -top-64 left-3 z-20 ">
-    </div> -->
-    </div>
-  </section>
-  <!-- Menu section -->
-  <!-- testimonals --> 
-  <section id="testiomonial">
-    <!-- container -->
-    <div class="max-w-6xl px-5 mx-auto mt-36 text-center">
-      <h2 class="text-4xl text-bold text-center font-poppins text-amber-900">
-        What's Different About Kye?
-      </h2>
-      <!-- testiomonial container 1 -->
-        <div class="flex flex-col mt-24 md:flex-row md:space-x-6">
-          <div class="flex flex-col items-center p-6 space-y-6 rounded-lg bg-veryLightGray md:w-1/3">
-            <img src="img/sadie.png" class="w-16 -mt-15 rounded-full" alt="">
-            <h5 class="text-lg font-bold">Sadie Sink</h5>
-            <p class="text-sm text-darkGrayishBlue">
-              "Kye has supercharged our team's workflow. The ability to maintain visibility on larger milestones at all time keeps everyone motivated."
+      <div
+        class="container flex flex-col-reverse items-center px-6 mx-auto space-y-0 md:space-y-0 md:flex-row"
+      >
+        <div class="flex flex-col mb-32 space-y-12 md:w-1/2">
+          <h1
+            class="max-w-md font-poppins text-4xl text-center md:text-5xl md:text-left"
+          >
+            Bring everyone together for a cup of coffee
+          </h1>
+          <p class="max-w-sm text-center text-amber-900 font-mono text-2xl">
+            Coffee. Drinks. Cocktails. Snacks. Good Eats. Great People. Cozy
+            place.
+          </p>
+          <div class="flex justify-center md:justify-start">
+            <a
+              href="#"
+              class="p-3 px-6 pt-2 text-white bg-red-600 rounded-full baseline font-poppins hover:bg-brightRedLight"
+            >
+              Sign In</a
+            >
+          </div>
+        </div>
+        <!-- image -->
+        <div class="md:w-1/2">
+          <img src="img/coffee.png" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Menu section -->
+    <section id="menu" class="bg-gray-100 py-16">
+      <div class="container mx-auto text-center">
+        <h2 class="text-4xl font-poppins text-amber-900 mb-12">Our Menu</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+          <div class="bg-white p-6 rounded-lg shadow-lg">
+            <img
+              src="img/espresso.png"
+              alt="Espresso"
+              class="w-full max-h-[25rem] object-cover rounded-t-lg"
+            />
+            <h3 class="text-xl font-bold mt-4">Espresso</h3>
+          </div>
+          <div class="bg-white p-6 rounded-lg shadow-lg">
+            <img
+              src="img/img4.png"
+              alt="Latte"
+              class="w-full h-[25rem] object-cover rounded-t-lg"
+            />
+            <h3 class="text-xl font-bold mt-4">Latte</h3>
+          </div>
+          <div class="bg-white p-6 rounded-lg shadow-lg">
+            <img
+              src="img/coffee1.png"
+              alt="Caramel Macchiato"
+              class="w-full h-[25rem] object-cover rounded-t-lg"
+            />
+            <h3 class="text-xl font-bold mt-4">Caramel Macchiato</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Rewards section -->
+    <section
+      id="rewards"
+      class="min-h-screen bg-gradient-to-r from-red-500 to-white py-16 flex items-center"
+    >
+      <div class="container mx-auto text-center">
+        <h2 class="text-4xl font-poppins text-gray-900 mb-8">
+          Getting started is easy
+        </h2>
+        <p class="text-xl text-gray-700 mb-12">
+          Earn points with every purchase and unlock exciting rewards!
+        </p>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+          <!-- Card 1: Get Started -->
+          <div class="flex flex-col items-center">
+            <!-- Circle with number -->
+            <div
+              class="w-16 h-16 flex items-center justify-center rounded-full border border-black text-2xl text-black mb-4"
+            >
+              1
+            </div>
+            <!-- Text below the circle -->
+            <h3 class="text-2xl font-bold text-black mb-4">Get Started</h3>
+            <p class="text-base text-black opacity-90">
+              Sign up and start earning points on every purchase you make!
             </p>
           </div>
-         <!-- testiomonial container 2 -->
-            <div class="flex flex-col items-center p-6 space-y-6 rounded-lg bg-veryLightGray md:w-1/3">
-              <img src="img/emma.png" class="w-16 -mt-15 rounded-full" alt="">
-              <h5 class="text-lg font-bold">Emma Watson</h5>
-              <p class="text-sm text-darkGrayishBlue">
-                "Kye has supercharged our team's workflow. The ability to maintain visibility on larger milestones at all time keeps everyone motivated."
-              </p>
+
+          <!-- Card 2: Earn Points -->
+          <div class="flex flex-col items-center">
+            <!-- Circle with number -->
+            <div
+              class="w-16 h-16 flex items-center justify-center rounded-full border border-black text-2xl text-black mb-4"
+            >
+              2
             </div>
-            <div class="flex flex-col items-center p-6 space-y-6 rounded-lg bg-veryLightGray md:w-1/3">
-              <img src="img/kaz.png" class="w-16 -mt-15 rounded-full" alt="">
-              <h5 class="text-lg font-bold">Kaz Brekker</h5>
-              <p class="text-sm text-darkGrayishBlue">
-                "Kye has supercharged our workflow. The ability to maintain visibility on larger milestones at all time keeps everyone motivated."
-              </p>
+            <!-- Text below the circle -->
+            <h3 class="text-2xl font-bold text-black mb-4">Earn Points</h3>
+            <p class="text-base text-black opacity-90">
+              The more you buy, the more points you earn! Get rewarded for your
+              loyalty.
+            </p>
+          </div>
+
+          <!-- Card 3: Redeem Rewards -->
+          <div class="flex flex-col items-center">
+            <!-- Circle with number -->
+            <div
+              class="w-16 h-16 flex items-center justify-center rounded-full border border-black text-2xl text-black mb-4"
+            >
+              3
             </div>
+            <!-- Text below the circle -->
+            <h3 class="text-2xl font-bold text-black mb-4">Redeem Rewards</h3>
+            <p class="text-base text-black opacity-90">
+              Exchange your points for free coffee, exclusive offers, and more!
+            </p>
+          </div>
         </div>
-    </div>
-  </section>
-</body>
+      </div>
+    </section>
+
+    <!-- Gift Cards Section -->
+    <section id="giftcard" class="py-16">
+      <div class="container mx-auto text-center">
+        <h2 class="text-4xl font-poppins text-gray-900 mb-8">
+          Get a Gift Card
+        </h2>
+        <p class="text-xl text-gray-700 mb-12">
+          Give the gift of coffee! Perfect for any occasion.
+        </p>
+
+        <!-- Gift Card Options -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+          <!-- Card 1: $10 Gift Card -->
+          <div
+            class="bg-white p-6 rounded-lg shadow-xl transform hover:scale-105 transition-transform duration-300 ease-in-out"
+          >
+            <div class="flex items-center justify-center mb-6">
+              <img src="img/9.jpg" alt="Gift Card $10" class="h-auto" />
+            </div>
+            <h3 class="text-2xl font-bold text-black mb-4">$10 Gift Card</h3>
+            <p class="text-sm text-gray-600 opacity-80">
+              Perfect for a quick coffee break or a small treat.
+            </p>
+            <a
+              href="#"
+              class="mt-6 inline-block bg-red-600 text-white p-3 px-6 rounded-full font-poppins hover:bg-brightRedLight transition duration-200"
+              >Buy Now</a
+            >
+          </div>
+
+          <!-- Card 2: $25 Gift Card -->
+          <div
+            class="bg-white p-6 rounded-lg shadow-xl transform hover:scale-105 transition-transform duration-300 ease-in-out"
+          >
+            <div class="flex items-center justify-center mb-6">
+              <img src="img/9.jpg" alt="Gift Card $25" class="h-auto" />
+            </div>
+            <h3 class="text-2xl font-bold text-black mb-4">$25 Gift Card</h3>
+            <p class="text-sm text-gray-600 opacity-80">
+              A great gift for coffee lovers to enjoy a variety of drinks and
+              snacks.
+            </p>
+            <a
+              href="#"
+              class="mt-6 inline-block bg-red-600 text-white p-3 px-6 rounded-full font-poppins hover:bg-brightRedLight transition duration-200"
+              >Buy Now</a
+            >
+          </div>
+
+          <!-- Card 3: $50 Gift Card -->
+          <div
+            class="bg-white p-6 rounded-lg shadow-xl transform hover:scale-105 transition-transform duration-300 ease-in-out"
+          >
+            <div class="flex items-center justify-center mb-6">
+              <img src="img/9.jpg" alt="Gift Card $50" class="h-auto" />
+            </div>
+            <h3 class="text-2xl font-bold text-black mb-4">$50 Gift Card</h3>
+            <p class="text-sm text-gray-600 opacity-80">
+              The ultimate gift for coffee lovers! Treat them to a premium
+              experience.
+            </p>
+            <a
+              href="#"
+              class="mt-6 inline-block bg-red-600 text-white p-3 px-6 rounded-full font-poppins hover:bg-brightRedLight transition duration-200"
+              >Buy Now</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section id="testimonials" class="py-24 bg-gray-50 h-auto">
+      <div class="max-w-6xl px-6 mx-auto text-center">
+        <h2 class="text-4xl font-poppins font-bold text-amber-900 mb-16">
+          What's Different About kye?
+        </h2>
+        <div
+          class="flex flex-col md:flex-row justify-center gap-12 md:gap-12 mt-12"
+        >
+          <!-- Testimonial 1 -->
+          <div
+            class="flex flex-col items-center p-6 md:p-8 space-y-6 rounded-lg bg-white shadow-lg transform hover:scale-105 transition-transform duration-300 ease-in-out md:w-1/3"
+          >
+            <img
+              src="img/Chandler.png"
+              class="w-20 h-20 md:w-24 md:h-24 object-cover rounded-full border-2 border-amber-900 -mt-16"
+              alt="John Doe"
+            />
+            <h5 class="text-lg md:text-xl font-bold text-gray-800">John Doe</h5>
+            <p class="text-sm md:text-base text-gray-600">
+              "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam
+              vitae mi purus. Donec sollicitudin, augue nec tempus laoreet, nisl
+              dui facilisis metus, nec feugiat justo diam eu diam."
+            </p>
+          </div>
+          <!-- Testimonial 2 -->
+          <div
+            class="flex flex-col items-center p-6 md:p-8 space-y-6 rounded-lg bg-white shadow-lg transform hover:scale-105 transition-transform duration-300 ease-in-out md:w-1/3"
+          >
+            <img
+              src="img/IMG_0014.JPG"
+              class="w-20 h-20 md:w-24 md:h-24 object-cover rounded-full border-2 border-amber-900 -mt-16"
+              alt="Jane Doe"
+            />
+            <h5 class="text-lg md:text-xl font-bold text-gray-800">Jane Doe</h5>
+            <p class="text-sm md:text-base text-gray-600">
+              "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam
+              vitae mi purus. Donec sollicitudin, augue nec tempus laoreet, nisl
+              dui facilisis metus, nec feugiat justo diam eu diam."
+            </p>
+          </div>
+          <!-- Testimonial 3 -->
+          <div
+            class="flex flex-col items-center p-6 md:p-8 space-y-6 rounded-lg bg-white shadow-lg transform hover:scale-105 transition-transform duration-300 ease-in-out md:w-1/3"
+          >
+            <img
+              src="img/k.png"
+              class="w-20 h-20 md:w-24 md:h-24 object-cover rounded-full border-2 border-amber-900 -mt-16"
+              alt="John Doe"
+            />
+            <h5 class="text-lg md:text-xl font-bold text-gray-800">John Doe</h5>
+            <p class="text-sm md:text-base text-gray-600">
+              "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam
+              vitae mi purus. Donec sollicitudin, augue nec tempus laoreet, nisl
+              dui facilisis metus, nec feugiat justo diam eu diam."
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
 </html>
